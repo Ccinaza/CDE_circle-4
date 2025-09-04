@@ -1,0 +1,6 @@
+*.csv
+*.json
+.env
+venv
+.venv
+cde_env
