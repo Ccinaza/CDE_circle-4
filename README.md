@@ -17,6 +17,7 @@ This repo serves as a central space for all our **group assignments, analyses, p
 ---
 
 ## Current Repository Structure
+```text
 circle-4-data-engineering/
 ├── git_linux_assignment/         
 │   ├── scripts/
@@ -26,3 +27,4 @@ circle-4-data-engineering/
 │   ├── Presentations/
 ├── .gitignore                        # Files that are not to be pushed live here
 └── README.md                         # This file - main repository guide
+```
