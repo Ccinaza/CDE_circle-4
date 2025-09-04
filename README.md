@@ -12,14 +12,15 @@ This repo serves as a central space for all our **group assignments, analyses, p
 - Temitope Babatola - [Check out Temitope's Github here](https://github.com)
 - Chibueze Obasi - [Check out Chibueze's Github here](https://github.com/Chibutechie)
 - Charles Issac - [Check out Isaac's Github here](https://github.com)
-- Chizaram Patience - [Check out Chizaram's Github here](https://github.com) 
+- Chizaram Patience - [Check out Chizaram's Github here](https://github.com)
 
 ---
 
 ## Current Repository Structure
+
 ```text
 circle-4-data-engineering/
-├── git_linux_assignment/         
+├── git_linux_assignment/
 │   ├── scripts/
 │   │   ├── bash/                     # Bash automation scripts
 │   │   └── sql/                      # SQL analysis queries
@@ -28,3 +29,10 @@ circle-4-data-engineering/
 ├── .gitignore                        # Files that are not to be pushed live here
 └── README.md                         # This file - main repository guide
 ```
+
+---
+
+## Technologies
+
+- Linux
+- Git
