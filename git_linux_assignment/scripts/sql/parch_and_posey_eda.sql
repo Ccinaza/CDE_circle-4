@@ -1,4 +1,5 @@
 -- 1. From the accounts table, which sales rep has the most customers under them
+
 select s.name as sales_rep_name, count(*) as total_customers
 from accounts a
 join sales_reps s 
@@ -19,7 +20,7 @@ JOIN region r ON s.region_id = r.id
 GROUP BY r.name, order_year
 ORDER BY order_year, total_orders DESC, total_order_value DESC;
 
---3. top 10 accounts by total order amount in USD
+-- 3. top 10 accounts by total order amount in USD
 
 SELECT a.name, sum(o.total) total_qty, sum(o.total_amt_usd) total_amt_usd
 FROM orders o
@@ -28,3 +29,23 @@ ON a.id = o.account_id
 GROUP BY 1
 ORDER BY 3 DESC
 LIMIT 10;
+
+-- 4. What are the top 3 channels that generated the highest revenue, and how much? 
+
+select 
+    w.channel, 
+    sum(cast(o.total_amt_usd as numeric)) as revenue
+from web_events as w
+left join orders as o
+    on w.account_id = o.account_id
+group by w.channel
+order by revenue desc
+limit 3;
+
+-- 5. Find the total orders alongside the total revenue generated
+
+select 
+    count(*) as total_orders,
+    sum(cast(total_amt_usd as numeric)) as total_revenue
+from orders;
+
