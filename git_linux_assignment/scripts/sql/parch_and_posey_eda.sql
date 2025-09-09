@@ -49,3 +49,21 @@ select
     sum(cast(total_amt_usd as numeric)) as total_revenue
 from orders;
 
+
+-- 6.Monthly revenue trend
+SELECT DATE_TRUNC('month', occurred_at) AS month, 
+       SUM(total_amt_usd) AS revenue
+FROM orders
+GROUP BY month
+ORDER BY month;
+
+--7. Rep Activity vs Web Events
+SELECT s.name AS sales_rep,
+       COUNT(DISTINCT o.id) AS num_orders,
+       COUNT(DISTINCT w.id) AS num_web_events
+FROM sales_reps s
+JOIN accounts a ON s.id = a.sales_rep_id
+LEFT JOIN orders o ON a.id = o.account_id
+LEFT JOIN web_events w ON a.id = w.account_id
+GROUP BY s.name
+ORDER BY num_orders DESC;
