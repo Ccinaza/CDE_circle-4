@@ -22,10 +22,9 @@ This repo serves as a central space for all our **group assignments, analyses, p
 circle-4-data-engineering/
 ├── git_linux_assignment/
 │   ├── scripts/
-│   │   ├── bash/                     # Bash automation scripts
 │   │   └── sql/                      # SQL analysis queries
-│   ├── Documentation/
-│   ├── Presentations/
+│   ├── Presentations/                # Powerpoint presentation
+|   └── README.md                     # Task Documentation
 ├── .gitignore                        # Files that are not to be pushed live here
 └── README.md                         # This file - main repository guide
 ```
