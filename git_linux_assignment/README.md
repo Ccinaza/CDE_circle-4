@@ -7,7 +7,7 @@ The database contains 5 csv data models:
 - orders.csv
 - accounts.csv
 
-We answered several questions to explore the factors that can boost profitability and streamline operations. These have been reported in our PowerPoint presentation. (see link here: )
+We answered several questions to explore the factors that can boost profitability and streamline operations. These have been reported in our PowerPoint presentation. (see link here: [canva](https://www.canva.com/design/DAGyb07pg8I/S90OF9PMRQpw_WZ0Rlu1Lg/view) )
 
 In summary, 
 
